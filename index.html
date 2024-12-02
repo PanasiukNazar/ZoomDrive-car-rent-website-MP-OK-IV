@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ЗумТранс</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+
+        <link rel="stylesheet" href="css/aos.css" />
+
+        <link rel="shortcut icon" href="images/fav.png" type="image/x-icon" />
+
+        <link rel="stylesheet" href="css/ionicons.min.css" />
+
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+        <link rel="stylesheet" href="css/jquery.timepicker.css" />
+
+        <link rel="stylesheet" href="css/flaticon.css" />
+        <link rel="stylesheet" href="css/icomoon.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav
+            class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+            id="ftco-navbar"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="index.html"
+                    >Зум<span>Транс</span></a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#ftco-nav"
+                    aria-controls="ftco-nav"
+                    aria-expanded="false"
+                    aria-label="Переключить меню"
+                >
+                    <span class="oi oi-menu"></span> Меню
+                </button>
+
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="testimonials.html" class="nav-link"
+                                >Отзывы</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="rent.html" class="nav-link">Аренда авто</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="service.html" class="nav-link"
+                                >Транспортные услуги</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END nav -->
+
+        <div
+            class="hero-wrap ftco-degree-bg"
+            style="background-image: url('images/bg_1.jpg')"
+            data-stellar-background-ratio="0.5"
+        >
+            <div class="overlay"></div>
+            <div class="container">
+                <div
+                    class="row no-gutters slider-text justify-content-start align-items-center justify-content-center"
+                >
+                    <div class="col-lg-8 ftco-animate">
+                        <div class="text w-100 text-center mb-md-5 pb-md-5">
+                            <h1 class="mb-4">Добро пожаловать в ЗумТранс</h1>
+                            <p style="font-size: 18px">
+                                Откройте для себя наш эксклюзивный выбор
+                                автомобилей для аренды и перевозок. Независимо
+                                от того, нужно ли вам элегантное авто для
+                                особого случая или вы ищете транспортные услуги
+                                для междугородних перевозок – мы предоставляем
+                                лучшие решения для вашего комфорта и удобства.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="ftco-section ftco-no-pt bg-light">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-12 featured-top">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <form
+                                    action="#"
+                                    class="request-form ftco-animate bg-primary"
+                                >
+                                    <h2>Организуйте свою поездку</h2>
+                                    <div class="form-group">
+                                        <label for="" class="label"
+                                            >Место получения</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Город, аэропорт, станция и т.д."
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="label"
+                                            >Место сдачи</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Город, аэропорт, станция и т.д."
+                                        />
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="form-group mr-2">
+                                            <label for="" class="label"
+                                                >Дата получения</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="book_pick_date"
+                                                placeholder="Дата"
+                                            />
+                                        </div>
+                                        <div class="form-group ml-2">
+                                            <label for="" class="label"
+                                                >Дата сдачи</label
+                                            >
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="book_off_date"
+                                                placeholder="Дата"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="label"
+                                            >Время получения</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="time_pick"
+                                            placeholder="Время"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="label"
+                                            >Email</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="email"
+                                            placeholder="Email"
+                                        />
+                                        <div
+                                            id="result"
+                                            style="color: red; font-size: 12px"
+                                        ></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="submit"
+                                            id="submit"
+                                            onclick="sendForm()"
+                                            value="Арендовать авто"
+                                            class="btn btn-secondary py-3 px-4"
+                                        />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="services-wrap rounded-right w-100">
+                                    <h3 class="heading-section mb-4">
+                                        Лучшая дорожка для аренды вашего
+                                        идеального авто
+                                    </h3>
+                                    <div class="row d-flex mb-4">
+                                        <div
+                                            class="col-md-4 d-flex align-self-stretch ftco-animate"
+                                        >
+                                            <div
+                                                class="services w-100 text-center"
+                                            >
+                                                <div
+                                                    class="icon d-flex align-items-center justify-content-center"
+                                                >
+                                                    <span
+                                                        class="flaticon-route"
+                                                    ></span>
+                                                </div>
+                                                <div class="text w-100">
+                                                    <h3 class="heading mb-2">
+                                                        Выберите место получения
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-md-4 d-flex align-self-stretch ftco-animate"
+                                        >
+                                            <div
+                                                class="services w-100 text-center"
+                                            >
+                                                <div
+                                                    class="icon d-flex align-items-center justify-content-center"
+                                                >
+                                                    <span
+                                                        class="flaticon-handshake"
+                                                    ></span>
+                                                </div>
+                                                <div class="text w-100">
+                                                    <h3 class="heading mb-2">
+                                                        Выберите лучшее
+                                                        предложение
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-md-4 d-flex align-self-stretch ftco-animate"
+                                        >
+                                            <div
+                                                class="services w-100 text-center"
+                                            >
+                                                <div
+                                                    class="icon d-flex align-items-center justify-content-center"
+                                                >
+                                                    <span
+                                                        class="flaticon-rent"
+                                                    ></span>
+                                                </div>
+                                                <div class="text w-100">
+                                                    <h3 class="heading mb-2">
+                                                        Забронируйте ваше авто
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ftco-section ftco-no-pt bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div
+                        class="col-md-12 heading-section text-center ftco-animate mb-5"
+                    >
+                        <span class="subheading">Что мы предлагаем</span>
+                        <h2 class="mb-2">Рекомендуемые автомобили</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="carousel-car owl-carousel">
+                            <div class="item">
+                                <div class="car-wrap rounded ftco-animate">
+                                    <div
+                                        class="img rounded d-flex align-items-end"
+                                        style="
+                                            background-image: url(images/offer-car-1.jpg);
+                                        "
+                                    ></div>
+                                    <div class="text">
+                                        <h2 class="mb-0">
+                                            <a href="#">Audi A8 long</a>
+                                        </h2>
+                                        <div class="d-flex mb-3">
+                                            <span class="cat">Лимузин</span>
+                                            <p class="price ml-auto">
+                                                200€ <span>/День</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="car-wrap rounded ftco-animate">
+                                    <div
+                                        class="img rounded d-flex align-items-end"
+                                        style="
+                                            background-image: url(images/offer-car-2.jpg);
+                                        "
+                                    ></div>
+                                    <div class="text">
+                                        <h2 class="mb-0">
+                                            <a href="#">Mercedes Benz E43</a>
+                                        </h2>
+                                        <div class="d-flex mb-3">
+                                            <span class="cat">Лимузин</span>
+                                            <p class="price ml-auto">
+                                                500€ <span>/День</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="car-wrap rounded ftco-animate">
+                                    <div
+                                        class="img rounded d-flex align-items-end"
+                                        style="
+                                            background-image: url(images/offer-car-3.jpg);
+                                        "
+                                    ></div>
+                                    <div class="text">
+                                        <h2 class="mb-0">
+                                            <a href="#"
+                                                >Bentley Continental GT</a
+                                            >
+                                        </h2>
+                                        <div class="d-flex mb-3">
+                                            <span class="cat">Лимузин</span>
+                                            <p class="price ml-auto">
+                                                1500€ <span>/День</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="car-wrap rounded ftco-animate">
+                                    <div
+                                        class="img rounded d-flex align-items-end"
+                                        style="
+                                            background-image: url(images/offer-car-4.jpg);
+                                        "
+                                    ></div>
+                                    <div class="text">
+                                        <h2 class="mb-0">
+                                            <a href="#">BMW X6M</a>
+                                        </h2>
+                                        <div class="d-flex mb-3">
+                                            <span class="cat">SUV</span>
+                                            <p class="price ml-auto">
+                                                1000€ <span>/День</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="car-wrap rounded ftco-animate">
+                                    <div
+                                        class="img rounded d-flex align-items-end"
+                                        style="
+                                            background-image: url(images/offer-car-5.jpg);
+                                        "
+                                    ></div>
+                                    <div class="text">
+                                        <h2 class="mb-0">
+                                            <a href="#">Ferrari SF90</a>
+                                        </h2>
+                                        <div class="d-flex mb-3">
+                                            <span class="cat"
+                                                >Спортивный автомобиль</span
+                                            >
+                                            <p class="price ml-auto">
+                                                2400€ <span>/День</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ftco-section ftco-about">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div
+                        class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+                        style="background-image: url(images/approach.jpg)"
+                    ></div>
+                    <div class="col-md-6 wrap-about ftco-animate">
+                        <div
+                            class="heading-section heading-section-white pl-md-5"
+                        >
+                            <span class="subheading">Наша философия</span>
+                            <h2 class="mb-4">Наш подход</h2>
+
+                            <p>
+                                Мы уверены, что каждая деталь имеет значение.
+                                Наша цель — предоставить вам незабываемый опыт
+                                аренды или покупки премиум автомобиля. Наша
+                                страсть к роскоши и совершенству отражается в
+                                каждом аспекте нашего сервиса.
+                            </p>
+                            <p>
+                                Индивидуальные консультации и решения на заказ.
+                                Наш подход начинается с индивидуальных
+                                консультаций. Мы уделяем внимание пониманию
+                                ваших пожеланий и потребностей, чтобы предложить
+                                вам лучшие варианты. Будь то аренда автомобиля
+                                для особого события или необходимость в
+                                автомобиле для длительных поездок — мы всегда
+                                готовы помочь. Мы предоставляем решения, которые
+                                точно соответствуют вашим требованиям. От выбора
+                                идеального автомобиля до организации
+                                дополнительных пожеланий — наша команда всегда
+                                готова помочь. Качество и совершенство в каждой
+                                детали. Мы уделяем внимание высочайшему качеству
+                                и вниманию к деталям. Наш автопарк состоит из
+                                тщательно отобранных автомобилей, которые
+                                соответствуют самым высоким стандартам. Каждый
+                                автомобиль регулярно проходит техническое
+                                обслуживание и проверку, чтобы гарантировать вам
+                                безопасную и комфортную поездку. Наш сервис не
+                                заканчивается на момент передачи автомобиля. Мы
+                                предлагаем полную поддержку на протяжении всей
+                                аренды автомобиля или его покупки. Наша команда
+                                всегда готова предоставить помощь и
+                                консультации.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div
+                        class="col-md-7 text-center heading-section ftco-animate"
+                    >
+                        <span class="subheading">Наши услуги</span>
+                        <h2 class="mb-3">Наши новые услуги</h2>
+                        <p>
+                            Мы предлагаем широкий спектр услуг для
+                            удовлетворения ваших пожеланий и потребностей в
+                            отношении аренды и транспортных услуг с премиум
+                            автомобилями. Наша цель — предоставить вам
+                            первоклассный сервис, будь то аренда автомобиля или
+                            его покупка. Мы ставим акцент на высочайшее качество
+                            и отличный сервис, чтобы гарантировать вашу полную
+                            удовлетворенность.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="services services-2 w-100 text-center">
+                            <div
+                                class="icon d-flex align-items-center justify-content-center"
+                            >
+                                <span class="flaticon-wedding-car"></span>
+                            </div>
+                            <div class="text w-100">
+                                <h3 class="heading mb-2">
+                                    Краткосрочная аренда
+                                </h3>
+                                <p>
+                                    Испытайте роскошь премиум автомобиля на
+                                    день, выходные или неделю. Наши предложения
+                                    краткосрочной аренды идеально подходят для
+                                    особых случаев, деловых поездок или просто
+                                    для того, чтобы побаловать себя.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="services services-2 w-100 text-center">
+                            <div
+                                class="icon d-flex align-items-center justify-content-center"
+                            >
+                                <span class="flaticon-transportation"></span>
+                            </div>
+                            <div class="text w-100">
+                                <h3 class="heading mb-2">
+                                    Долгосрочная аренда
+                                </h3>
+                                <p>
+                                    Для клиентов, которым нужно арендовать авто
+                                    на длительный срок, мы предлагаем гибкие
+                                    условия долгосрочной аренды. Наслаждайтесь
+                                    свободой и комфортом от использования
+                                    премиум автомобиля без долгосрочных
+                                    обязательств.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="services services-2 w-100 text-center">
+                            <div
+                                class="icon d-flex align-items-center justify-content-center"
+                            >
+                                <span class="flaticon-car"></span>
+                            </div>
+                            <div class="text w-100">
+                                <h3 class="heading mb-2">
+                                    Продажа автомобилей
+                                </h3>
+                                <p>
+                                    Инвестируйте в свой автомобиль мечты с
+                                    помощью нашего эксклюзивного сервиса продажи
+                                    автомобилей. Мы предлагаем изысканный выбор
+                                    новых и подержанных автомобилей премиум
+                                    класса, которые соответствуют самым высоким
+                                    стандартам качества.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="services services-2 w-100 text-center">
+                            <div
+                                class="icon d-flex align-items-center justify-content-center"
+                            >
+                                <span class="flaticon-transportation"></span>
+                            </div>
+                            <div class="text w-100">
+                                <h3 class="heading mb-2">
+                                    Индивидуальная консультация
+                                </h3>
+                                <p>
+                                    Наша опытная команда всегда готова помочь
+                                    вам в выборе идеального автомобиля. Мы
+                                    предлагаем персонализированную консультацию,
+                                    чтобы удовлетворить все ваши пожелания и
+                                    потребности.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="ftco-section ftco-intro"
+            style="background-image: url(images/bg_3.jpg)"
+        >
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div
+                        class="col-md-6 heading-section heading-section-white ftco-animate"
+                    >
+                        <h2 class="mb-3">
+                            Хотите заработать с нами? Не опоздайте.
+                        </h2>
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            Связаться с нами
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div
+                        class="col-md-7 heading-section text-center ftco-animate"
+                    >
+                        <span class="subheading">Наш блог</span>
+                        <h2>Наши последние статьи</h2>
+                        <p>
+                            Узнайте больше о мире премиум автомобилей с помощью
+                            наших информативных статей в блоге. Мы делимся с
+                            вами советами, новостями и последними тенденциями в
+                            аренде авто и транспортных услугах. Будьте в курсе
+                            последних технологий и трендов в автомобильной
+                            отрасли.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="col-md-4 d-flex ftco-animate">
+                        <div class="blog-entry justify-content-end">
+                            <a
+                                class="block-20"
+                                style="
+                                    background-image: url('images/blog-1.jpg');
+                                "
+                            ></a>
+                            <div class="text pt-4">
+                                <div class="meta mb-3">
+                                    <div><a href="#">29 Окт. 2023</a></div>
+                                    <div>
+                                        <a href="#" class="meta-chat"
+                                            ><span class="icon-chat"></span>
+                                            3</a
+                                        >
+                                    </div>
+                                </div>
+                                <h3 class="heading mt-2">
+                                    <a href="#"
+                                        >Советы по выбору правильного автомобиля
+                                        для аренды</a
+                                    >
+                                </h3>
+                                <p>
+                                    Узнайте, как выбрать идеальный автомобиль
+                                    для аренды в зависимости от ваших
+                                    потребностей. Мы дадим вам советы, как
+                                    учитывать производительность, комфорт и
+                                    стиль.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex ftco-animate">
+                        <div class="blog-entry justify-content-end">
+                            <a
+                                class="block-20"
+                                style="
+                                    background-image: url('images/blog-2.jpg');
+                                "
+                            ></a>
+                            <div class="text pt-4">
+                                <div class="meta mb-3">
+                                    <div><a href="#">9 Сен. 2023</a></div>
+                                    <div>
+                                        <a href="#" class="meta-chat"
+                                            ><span class="icon-chat"></span>
+                                            12</a
+                                        >
+                                    </div>
+                                </div>
+                                <h3 class="heading mt-2">
+                                    <a href="#"
+                                        >Новые технологии в автомобилях премиум
+                                        класса</a
+                                    >
+                                </h3>
+                                <p>
+                                    Узнайте о самых последних технологиях и
+                                    инновациях в премиум автомобилях, которые
+                                    могут изменить ваше водительское
+                                    впечатление.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex ftco-animate">
+                        <div class="blog-entry">
+                            <a
+                                class="block-20"
+                                style="
+                                    background-image: url('images/blog-3.jpg');
+                                "
+                            ></a>
+                            <div class="text pt-4">
+                                <div class="meta mb-3">
+                                    <div><a href="#">29 Май. 2024</a></div>
+                                    <div>
+                                        <a href="#" class="meta-chat"
+                                            ><span class="icon-chat"></span>
+                                            31</a
+                                        >
+                                    </div>
+                                </div>
+                                <h3 class="heading mt-2">
+                                    <a href="#"
+                                        >Преимущества долгосрочной аренды
+                                        премиум автомобиля</a
+                                    >
+                                </h3>
+                                <p>
+                                    Откройте для себя преимущества долгосрочной
+                                    аренды автомобиля премиум класса и узнайте,
+                                    почему это привлекательный вариант для
+                                    многих клиентов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="ftco-footer ftco-bg-dark ftco-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">
+                                <a href="#" class="logo"
+                                    >Lux<span>Cars</span></a
+                                >
+                            </h2>
+                            <p>
+                                Добро пожаловать в ЗумТранс, вашего эксперта в
+                                области аренды авто и транспортных услуг.
+                                Ознакомьтесь с нашим эксклюзивным выбором
+                                автомобилей премиум класса и убедитесь в
+                                качестве нашего сервиса.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Поддержка клиентов</h2>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="index.html" class="py-2 d-block"
+                                        >Главная</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="about.html" class="py-2 d-block"
+                                        >О нас</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="privacy-policy.html"
+                                        class="py-2 d-block"
+                                        >Политика конфиденциальности</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="terms-of-use.html"
+                                        class="py-2 d-block"
+                                        >Пользовательское соглашение</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Есть вопросы?</h2>
+                            <div class="block-23 mb-3">
+                                <ul>
+                                    <li>
+                                        <span
+                                            class="icon icon-map-marker"
+                                        ></span
+                                        ><span class="text"
+                                            >Сәтпаев көшесі 29 6, Алматы 050000,
+                                            Казахстан</span
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><span
+                                                class="icon icon-phone"
+                                            ></span
+                                            ><span class="text"
+                                                >+77051060066</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><span
+                                                class="icon icon-envelope"
+                                            ></span
+                                            ><span class="text"
+                                                >zoom_drive@gmail.com</span
+                                            ></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">
+                    Политика использования cookies
+                </h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Этот сайт использует cookies, чтобы предоставить вам лучший
+                    опыт использования. Cookies — это маленькие текстовые файлы,
+                    которые сохраняются на вашем устройстве и помогают
+                    поддерживать функциональность сайта, а также предоставляют
+                    анонимную статистику использования. Используя наш сайт, вы
+                    соглашаетесь на использование cookies в соответствии с нашей
+                    Политикой использования cookies.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Принять</button>
+                <button class="cookie-button" id="declineBtn">
+                    Отказаться
+                </button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- loader -->
+        <div id="ftco-loader" class="show fullscreen">
+            <svg class="circular" width="48px" height="48px">
+                <circle
+                    class="path-bg"
+                    cx="24"
+                    cy="24"
+                    r="22"
+                    fill="none"
+                    stroke-width="4"
+                    stroke="#eeeeee"
+                />
+                <circle
+                    class="path"
+                    cx="24"
+                    cy="24"
+                    r="22"
+                    fill="none"
+                    stroke-width="4"
+                    stroke-miterlimit="10"
+                    stroke="#F96D00"
+                />
+            </svg>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/jquery.timepicker.min.js"></script>
+        <script src="js/scrollax.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+        <script src="js/contact-form.js"></script>
+    </body>
+</html>
